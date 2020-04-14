@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataSpecification="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataSpecification" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_LYCrAD4AEemXUJnrjb_PdQ" Name="User">
+  <simulationDescription id="_czvF0D4AEemXUJnrjb_PdQ" Name="User">
+    <simulationtimeinformation/>
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_IEWQMD4BEemXUJnrjb_PdQ" Name="User_OOVSD">
+      <objectclassoperation id="_YGpMsGWhEemmJpjAKRs2YQ" Name="userSendServiceMessage">
+        <parameters Name="source">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="destination">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="nexthop">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="description">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="cpuTransmissionStartTime">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_ie3rIWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="type">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="a">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="b">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="c">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </parameters>
+      </objectclassoperation>
+      <objectclassoperation id="_lnTVUGWhEemmJpjAKRs2YQ" Name="userSendStatusMessage">
+        <parameters Name="source">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="destination">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="nexthop">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="description">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="cpuTransmissionStartTime">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_ie3rIWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+        <parameters Name="type">
+          <dataType xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </parameters>
+      </objectclassoperation>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" id="_LCdSwmWjEemmJpjAKRs2YQ" objectclassoperation="_YGpMsGWhEemmJpjAKRs2YQ _lnTVUGWhEemmJpjAKRs2YQ" objectclass="__PVfd2WhEemmJpjAKRs2YQ"/>
+      <objectclass id="__PVfd2WhEemmJpjAKRs2YQ" Name="UserComponent" parentClass="//@simulationDescription/@simulationdata/@objectclass.1/@objectClassInheritance" referencingrequiredooentry="_LCdSwmWjEemmJpjAKRs2YQ">
+        <data xsi:type="DataSpecification:EnumTypedData" id="_l5AcsT4KEemXUJnrjb_PdQ" Name="ComponentStatus" enumtype="_LO7uIz4HEemXUJnrjb_PdQ">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_xLCxoT4KEemXUJnrjb_PdQ" Name="EventService" enumtype="_Xbtpgz4GEemXUJnrjb_PdQ">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data xsi:type="DataSpecification:EnumTypedData" id="_2v9LsT4KEemXUJnrjb_PdQ" Name="EventStatus" enumtype="_Xbtpgz4GEemXUJnrjb_PdQ">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_a_0QID4LEemXUJnrjb_PdQ" Name="lookahead">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_hHq_MD4LEemXUJnrjb_PdQ" Name="maxEventServiceRequestCount">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_r5R98H8BEemJ3rN-3bxU4g" Name="sendEventTimeIntervalValue">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </data>
+      </objectclass>
+      <objectclass id="_AhlmE37_EemJ3rN-3bxU4g" Name="MoSimComponent">
+        <objectClassInheritance childClasses="__PVfd2WhEemmJpjAKRs2YQ"/>
+      </objectclass>
+      <objectclass id="_33lj52WjEemmJpjAKRs2YQ" Name="UserServiceEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_Y4xv4EDkEem8bOhZSAecHQ" Name="source">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_gFvs4EDkEem8bOhZSAecHQ" Name="destination">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_rD4OYEDkEem8bOhZSAecHQ" Name="nexthop">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_nPUXoEDkEem8bOhZSAecHQ" Name="description">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_8neoAEDkEem8bOhZSAecHQ" Name="cpuTransimissionStartTime">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_ie3rIWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="__fKm0EDkEem8bOhZSAecHQ" Name="type">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_DAR9IEDlEem8bOhZSAecHQ" Name="a">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_H-e8gEDlEem8bOhZSAecHQ" Name="b">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_LdJbwEDlEem8bOhZSAecHQ" Name="c">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_joEH0WWpEemmJpjAKRs2YQ"/>
+        </data>
+      </objectclass>
+      <objectclass id="__YSVN2WjEemmJpjAKRs2YQ" Name="UserStatusEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_Y4xv4EDkEem8bOhZSAecHQ" Name="source"/>
+        <data id="_gFvs4EDkEem8bOhZSAecHQ" Name="destination"/>
+        <data id="_nPUXoEDkEem8bOhZSAecHQ" Name="description"/>
+        <data id="_rD4OYEDkEem8bOhZSAecHQ" Name="cpuTransimissionTimeStart"/>
+        <data id="_8neoAEDkEem8bOhZSAecHQ" Name="cpuTransimissionTimeStamp"/>
+        <data id="__fKm0EDkEem8bOhZSAecHQ" Name="type"/>
+      </objectclass>
+      <objectclass id="_zqm3I37_EemJ3rN-3bxU4g" Name="Interaction" semantics="EventType">
+        <objectClassInheritance childClasses="_33lj52WjEemmJpjAKRs2YQ __YSVN2WjEemmJpjAKRs2YQ"/>
+      </objectclass>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_WvNawT4EEemXUJnrjb_PdQ">
+    <datatype xsi:type="DataTypes:EnumType" id="_XEtJoz4EEemXUJnrjb_PdQ" Name="EventServiceTypes">
+      <enumliteral id="_QK6VYD4GEemXUJnrjb_PdQ" literalName="SERVICEREQUEST"/>
+      <enumliteral id="_STlSED4GEemXUJnrjb_PdQ" literalName="SERVICERESPONSE" literalValue="1"/>
+      <enumliteral id="_VKueUD4GEemXUJnrjb_PdQ" literalName="SERVICEERROR" literalValue="2"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:EnumType" id="_Xbtpgz4GEemXUJnrjb_PdQ" Name="EventStatusTypes">
+      <enumliteral id="_ij-XYD4GEemXUJnrjb_PdQ" literalName="SIMULATIONSTART" literalValue="1"/>
+      <enumliteral id="_lgrZED4GEemXUJnrjb_PdQ" literalName="SIMULATIONEND" literalValue="2"/>
+      <enumliteral id="_nT31AD4GEemXUJnrjb_PdQ" literalName="INTERVALREQUEST" literalValue="3"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:EnumType" id="_LO7uIz4HEemXUJnrjb_PdQ" Name="ComponentStatus">
+      <enumliteral id="_PyTysD4HEemXUJnrjb_PdQ" literalName="INPROGRESS" literalValue="1"/>
+      <enumliteral id="_igMOID4HEemXUJnrjb_PdQ" literalName="IDLEMODUS" literalValue="2"/>
+      <enumliteral id="_PyTysD4HEemXUJnrjb_PdQ" literalName="INPROGRESS" literalValue="1"/>
+    </datatype>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="WebServiceNetwork.modularsimulationassembly#_ISL6Bj7UEem_ypOxFh0PJw"/>
+</SimulationFeature:SimulationFeature>

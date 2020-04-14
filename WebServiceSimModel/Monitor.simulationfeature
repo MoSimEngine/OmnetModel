@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_xxBg0GVMEemmJpjAKRs2YQ" Name="Monitor">
+  <simulationDescription id="_aWTgkGYBEemmJpjAKRs2YQ">
+    <simulationtimeinformation/>
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_e0ZcgGYBEemmJpjAKRs2YQ">
+      <objectclass id="_k0G8M2YBEemmJpjAKRs2YQ" Name="MonitorComponent" parentClass="//@simulationDescription/@simulationdata/@objectclass.1/@objectClassInheritance"/>
+      <objectclass id="_w0qVB38QEemJ3rN-3bxU4g" Name="MoSimComponent">
+        <objectClassInheritance childClasses="_k0G8M2YBEemmJpjAKRs2YQ"/>
+      </objectclass>
+      <objectclass id="_2VJiF38QEemJ3rN-3bxU4g" Name="MonitorServiceEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_LWaVYH8REemJ3rN-3bxU4g" Name="source"/>
+        <data id="_L1AV4H8REemJ3rN-3bxU4g" Name="destination"/>
+        <data id="_MNB0UH8REemJ3rN-3bxU4g" Name="nexthop"/>
+        <data id="_MpJIkH8REemJ3rN-3bxU4g" Name="destination"/>
+        <data id="_NC5FUH8REemJ3rN-3bxU4g" Name="cpuTransmissionStartTime"/>
+        <data id="_NdogkH8REemJ3rN-3bxU4g" Name="type"/>
+        <data id="_OLco0H8REemJ3rN-3bxU4g" Name="a"/>
+        <data id="_h7AjsH8REemJ3rN-3bxU4g" Name="b"/>
+        <data id="_i9f7cH8REemJ3rN-3bxU4g" Name="c"/>
+      </objectclass>
+      <objectclass id="_8uHPR38QEemJ3rN-3bxU4g" Name="MonitorStatusEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_kMrrYH8REemJ3rN-3bxU4g" Name="source">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_kx4qMH8REemJ3rN-3bxU4g" Name="destination">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_l9TUcH8REemJ3rN-3bxU4g" Name="nexthop">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_mijWkH8REemJ3rN-3bxU4g" Name="description">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_nIO2gH8REemJ3rN-3bxU4g" Name="cpuTransmissionStartTime">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_ie3rIWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_nvsfIH8REemJ3rN-3bxU4g" Name="type">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+      </objectclass>
+      <objectclass id="_DKHCV38REemJ3rN-3bxU4g" Name="Interaction">
+        <objectClassInheritance childClasses="_2VJiF38QEemJ3rN-3bxU4g _8uHPR38QEemJ3rN-3bxU4g"/>
+      </objectclass>
+      <objectclass id="_HIREc4S4EemrKua5Em9WWQ" Name="EngineSpecificCoordinator" parentClass="//@simulationDescription/@simulationdata/@objectclass.6/@objectClassInheritance"/>
+      <objectclass id="_YzWmJ4S4EemrKua5Em9WWQ" Name="MoSimCoordinator">
+        <objectClassInheritance childClasses="_HIREc4S4EemrKua5Em9WWQ"/>
+      </objectclass>
+    </simulationdata>
+  </simulationDescription>
+  <dataTypeContainer id="_XvCG0X8wEemJ3rN-3bxU4g">
+    <datatype xsi:type="DataTypes:EnumType" id="_YETMM38wEemJ3rN-3bxU4g" Name="MonitorServiceStatus">
+      <enumliteral id="_9yVP0IS3EemrKua5Em9WWQ" literalName="SERVICEREQUEST"/>
+      <enumliteral id="_-Qi10IS3EemrKua5Em9WWQ" literalName="SERVICERESPONSE" literalValue="1"/>
+      <enumliteral id="_-88BwIS3EemrKua5Em9WWQ" literalName="SERVICEERROR" literalValue="2"/>
+      <representingDataType href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+    </datatype>
+  </dataTypeContainer>
+  <basicsimulationcomponent href="WebServiceNetwork.modularsimulationassembly#_VTfcIGYDEemmJpjAKRs2YQ"/>
+</SimulationFeature:SimulationFeature>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModularSimulationAssembly:SimulationAssembly xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AdapterServices="edu.kit.ipd.sdq.Modularization.Adaptation.AdapterServices" xmlns:AnnotationEnhancement="edu.kit.ipd.sdq.Modularization.Assembly.AnnotationEnhancement" xmlns:Annotations="edu.kit.ipd.sdq.Modularization.Annotations" xmlns:AssemblyComponentWiring="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentWiring" xmlns:AssemblyConnections="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections" xmlns:InterfaceConnection="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyConnections.ComponentInterfaceConnection" xmlns:InterfaceMapping="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceMapping" xmlns:ModularEnvironment="edu.kit.ipd.sdq.Modularization.ModularEnvironment" xmlns:ModularSimulationAssembly="edu.kit.ipd.sdq.Modularization.Assembly" id="_Zw5-QD4REemXUJnrjb_PdQ" Name="WebServiceNetwork" assembledsimulationcomponent="_d9xht4CIEemqifB0PBAc8w">
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_Mt6p1EEWEem8bOhZSAecHQ" Name="User_Router" providingComponent="_ISL6Bj7UEem_ypOxFh0PJw" requieringComponent="_nNvzRj7UEem_ypOxFh0PJw" interfaceprovided="_4_ySWUEVEem8bOhZSAecHQ" interfacerequired="__1NrWEEQEem8bOhZSAecHQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_qP_npEEWEem8bOhZSAecHQ" Name="Router_Server" providingComponent="_nNvzRj7UEem_ypOxFh0PJw" requieringComponent="_yVwphj7UEem_ypOxFh0PJw" interfaceprovided="_xdMDmUEVEem8bOhZSAecHQ" interfacerequired="_D0ar2EEREem8bOhZSAecHQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_zmwitEEWEem8bOhZSAecHQ" Name="Server_Router" providingComponent="_yVwphj7UEem_ypOxFh0PJw" requieringComponent="_nNvzRj7UEem_ypOxFh0PJw" interfaceprovided="_1N1DqUEVEem8bOhZSAecHQ" interfacerequired="__1NrWEEQEem8bOhZSAecHQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_586MdEEWEem8bOhZSAecHQ" Name="Router_User" providingComponent="_nNvzRj7UEem_ypOxFh0PJw" requieringComponent="_ISL6Bj7UEem_ypOxFh0PJw" interfaceprovided="_xdMDmUEVEem8bOhZSAecHQ" interfacerequired="_AfOSqEEGEem8bOhZSAecHQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_ODVBJGYDEemmJpjAKRs2YQ" Name="User_Monitor" providingComponent="_VTfcIGYDEemmJpjAKRs2YQ" requieringComponent="_ISL6Bj7UEem_ypOxFh0PJw" interfaceprovided="_4_ySWUEVEem8bOhZSAecHQ" interfacerequired="_BRHoCGYFEemmJpjAKRs2YQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_RfAd1GYDEemmJpjAKRs2YQ" Name="Router_Monitor" providingComponent="_VTfcIGYDEemmJpjAKRs2YQ" requieringComponent="_nNvzRj7UEem_ypOxFh0PJw" interfaceprovided="_xdMDmUEVEem8bOhZSAecHQ" interfacerequired="_BRHoCGYFEemmJpjAKRs2YQ"/>
+  <connection xsi:type="InterfaceConnection:RequiredProvidedInterfaceConnection" id="_TJj7JGYDEemmJpjAKRs2YQ" Name="Server_Monitor" providingComponent="_VTfcIGYDEemmJpjAKRs2YQ" requieringComponent="_yVwphj7UEem_ypOxFh0PJw" interfaceprovided="_1N1DqUEVEem8bOhZSAecHQ" interfacerequired="_BRHoCGYFEemmJpjAKRs2YQ"/>
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_MAJL8WYEEemmJpjAKRs2YQ" Name="Monitor" coordinator="_a3pZSD7UEem_ypOxFh0PJw" simulationcomponentconnector="_wRZ-kGYEEemmJpjAKRs2YQ" coordinatorcomponentconnector="_FAi-MUEFEem8bOhZSAecHQ" simulation="_VTfcIGYDEemmJpjAKRs2YQ"/>
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_jkSIIUEXEem8bOhZSAecHQ" Name="User" coordinator="_a3pZSD7UEem_ypOxFh0PJw" simulationcomponentconnector="_iAHr4EEFEem8bOhZSAecHQ" coordinatorcomponentconnector="_FAi-MUEFEem8bOhZSAecHQ" simulation="_ISL6Bj7UEem_ypOxFh0PJw"/>
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_jkSIIUEXEem8bOhZSAecHQ" Name="Router" coordinator="_a3pZSD7UEem_ypOxFh0PJw" simulationcomponentconnector="_iAHr4EEFEem8bOhZSAecHQ" coordinatorcomponentconnector="_FAi-MUEFEem8bOhZSAecHQ" simulation="_nNvzRj7UEem_ypOxFh0PJw"/>
+  <connection xsi:type="AssemblyComponentWiring:SimulationFeature_MSEWiring" id="_jkSIIUEXEem8bOhZSAecHQ" Name="Server" coordinator="_a3pZSD7UEem_ypOxFh0PJw" simulationcomponentconnector="_iAHr4EEFEem8bOhZSAecHQ" coordinatorcomponentconnector="_FAi-MUEFEem8bOhZSAecHQ" simulation="_yVwphj7UEem_ypOxFh0PJw"/>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:MSEComponent" id="_a3pZSD7UEem_ypOxFh0PJw" Name="OpenRTI">
+    <componentconnector xsi:type="AssemblyConnections:MSEComponentConnector" id="_FAi-MUEFEem8bOhZSAecHQ" Name="openRTIAmbassador">
+      <mseserviceinterface href="openRTI.modularenvironment#__ZVvUo_iEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_kc6ako_hEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_uZTnso_gEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_2Ag0Mo_hEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_M68dso_kEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_S9rHEo_iEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ZXUUQo_jEeidsK6u7bOs4Q"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_FdbRko9HEeijo84HWAGaqg"/>
+    </componentconnector>
+    <mse_entity xsi:type="ModularEnvironment:Coordinator" href="openRTI.modularenvironment#_fBdjUJ4rEeit6tLJby_Vyw"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_nNvzRj7UEem_ypOxFh0PJw" Name="Router">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_iAHr4EEFEem8bOhZSAecHQ" Name="RouterFederateConnector">
+      <mseserviceinterface href="openRTI.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="__1NrWEEQEem8bOhZSAecHQ" simulationcomonent="_nNvzRj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_xdMDmUEVEem8bOhZSAecHQ" simulationcomonent="_nNvzRj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="ServiceEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="ServiceEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_CZxrQYC2EemqifB0PBAc8w">
+              <multiplesettableannotation href="openRTI.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_D8mI4oC2EemqifB0PBAc8w">
+              <exclusivesettableannotation href="openRTI.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_IOkUYoC2EemqifB0PBAc8w">
+              <exclusivesettableannotation href="openRTI.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+            </annotationsetter>
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStart">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="a">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="b">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="c">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <objectclassoperation href="Router.simulationfeature#_Ah8nkEDnEem8bOhZSAecHQ"/>
+        </additionenhancedoperation>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="StatusEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="StatusEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStart">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+    <simmodule href="Router.simulationfeature#_LYCrAD4AEemXUJnrjb_PdQ"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_yVwphj7UEem_ypOxFh0PJw" Name="Server">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_iAHr4EEFEem8bOZHWAecHQ" Name="ServerFederateConnector">
+      <mseserviceinterface href="openRTI.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <adapterservice xsi:type="AdapterServices:TimeAdapter" id="_h_tDFoCpEemqifB0PBAc8w" Name="SimulationTimeInformation"/>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_D0ar2EEREem8bOhZSAecHQ" simulationcomonent="_yVwphj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+      <requieringOperationMapping annotatedoperation="_jlVqVEESEem8bOhZSAecHQ">
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_6kH8QED8Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_EHw1sED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_OeuCcED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_EHw1sED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_JFcQoED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_6wyn1EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_REULsED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_W2MqwED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_YMdTEED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_YMdTEED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <interfaceoperation href="WebServiceNetwork.interfacedefinition#_zPVrUT8gEemsT82M-2d-uQ"/>
+      </requieringOperationMapping>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_1N1DqUEVEem8bOhZSAecHQ" simulationcomonent="_yVwphj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+      <providingOperationMapping annotatedoperation="_jlVqVEESEem8bOhZSAecHQ">
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_6kH8QED8Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_EHw1sED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_OeuCcED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_HVU94ED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_jVxu5EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_JFcQoED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <parameter_interface_mapping annotatedparameter="_6wyn1EETEem8bOhZSAecHQ">
+          <interfaceparameter href="WebServiceNetwork.interfacedefinition#_REULsED9Eem8bOhZSAecHQ"/>
+        </parameter_interface_mapping>
+        <interfaceoperation href="WebServiceNetwork.interfacedefinition#_fj2_MT8gEemsT82M-2d-uQ"/>
+      </providingOperationMapping>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="ServiceEvent">
+        <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_ye6uAX8pEemJ3rN-3bxU4g" Name="ServiceEventSharing">
+          <selectedValues href="openRTI.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+          <selectedValues href="openRTI.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+          <selectedValues href="openRTI.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+          <multiplesettableannotation href="openRTI.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+        </annotationsetter>
+        <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_eHK5AoCuEemqifB0PBAc8w" Name="ServiceEventOrder">
+          <exclusivesettableannotation href="openRTI.modularenvironment#_IERKQY9CEeiN3uMSM_ELLw"/>
+        </annotationsetter>
+        <annotationsetter xsi:type="Annotations:ExclusiveSelectionAnnotationSetter" id="_tKjYooCuEemqifB0PBAc8w" Name="ServiceEventTransportation">
+          <exclusivesettableannotation href="openRTI.modularenvironment#_RRwNgo9CEeiN3uMSM_ELLw"/>
+        </annotationsetter>
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="ServiceEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="nexthop">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.0/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionStartTime">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="a">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.0/@parameters.6"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="b">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.0/@parameters.7"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="c">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.0/@parameters.8"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="StatusEvent">
+        <annotationsetter xsi:type="Annotations:MultipleSelectionAnnotationSetter" id="_a71owX8qEemJ3rN-3bxU4g" Name="retisterRTIStatusInteraction">
+          <selectedValues href="openRTI.modularenvironment#_sce9oI87EeimvNDjScjahQ"/>
+          <selectedValues href="openRTI.modularenvironment#_s9jDUI87EeimvNDjScjahQ"/>
+          <selectedValues href="openRTI.modularenvironment#_NXkP4I9CEeiN3uMSM_ELLw"/>
+          <multiplesettableannotation href="openRTI.modularenvironment#_nMO9oZ4xEeieTJym-jlZmw"/>
+        </annotationsetter>
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="StatusEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="nexthop">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionStartTime">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="Router.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_ISL6Bj7UEem_ypOxFh0PJw" Name="User">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_iAHr4EEFEem8bOhZSAecHQ" Name="UserFederateConnector">
+      <mseserviceinterface href="openRTI.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_AfOSqEEGEem8bOhZSAecHQ" simulationcomonent="_ISL6Bj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+      <requieringOperationMapping/>
+    </interfacemapping>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceProvided" id="_4_ySWUEVEem8bOhZSAecHQ" simulationcomonent="_ISL6Bj7UEem_ypOxFh0PJw">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+      <providingOperationMapping annotatedoperation="_jlVqVEESEem8bOhZSAecHQ">
+        <interfaceoperation href="WebServiceNetwork.interfacedefinition#_zPVrUT8gEemsT82M-2d-uQ"/>
+      </providingOperationMapping>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="ServiceEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="ServiceEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStart">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="a">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="b">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="c">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <objectclassoperation href="User.simulationfeature#_YGpMsGWhEemmJpjAKRs2YQ"/>
+        </additionenhancedoperation>
+        <objectclass href="User.simulationfeature#_33lj52WjEemmJpjAKRs2YQ"/>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOhZSAecHQ" Name="StatusEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEem8bOhZSAecHQ" Name="StatusEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStart">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+        <objectclass href="User.simulationfeature#__YSVN2WjEemmJpjAKRs2YQ"/>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+    <simmodule href="User.simulationfeature#_LYCrAD4AEemXUJnrjb_PdQ"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:SimulationFeatureComponent" id="_VTfcIGYDEemmJpjAKRs2YQ" Name="Monitor">
+    <componentconnector xsi:type="AssemblyConnections:SimulationComponentConnector" id="_wRZ-kGYEEemmJpjAKRs2YQ" Name="MonitorFederateConnector">
+      <mseserviceinterface href="openRTI.modularenvironment#_JV7tgpCiEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_h7aq8pChEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_bJF7MpCkEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_WRmLUpClEeizmvAWlfhMkw"/>
+      <mseserviceinterface href="openRTI.modularenvironment#_ExhKUpCmEeizmvAWlfhMkw"/>
+    </componentconnector>
+    <interfacemapping xsi:type="InterfaceMapping:InterfaceRequired" id="_BRHoCGYFEemmJpjAKRs2YQ" simulationcomonent="_VTfcIGYDEemmJpjAKRs2YQ">
+      <assemblyinterface href="WebServiceNetwork.interfacedefinition#_hs9WMD4OEemXUJnrjb_PdQ"/>
+    </interfacemapping>
+    <annotationenhancedinformation xsi:type="AnnotationEnhancement:OOAnnotationEnhancedInformation">
+      <additionenchancedobjectclass id="_ClFVcEESEem8byxzSAecHQ" Name="ServiceEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_WWWqVEESEem8bOhZSAecHQ" Name="ServiceEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETEem8bOhUUEecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8PPhZSAecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="nexthop">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem4eeOhZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyn1EETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="a">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="b">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSAecHQ" Name="c">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+        <objectclass href="Monitor.simulationfeature#_2VJiF38QEemJ3rN-3bxU4g"/>
+      </additionenchancedobjectclass>
+      <additionenchancedobjectclass id="_ClFVcEESEem8bOYxZAecHQ" Name="StatusEvent">
+        <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+        <additionenhancedoperation id="_jlVqVEESEexzyOhZSAecHQ" Name="StatusEventToInteraction">
+          <annotationinterface href="openRTI.modularenvironment#_5PcHNI9FEeijo84HWAGaqg"/>
+          <annotatedparameter id="_jVxu5EETbbm8bOhZSAecHQ" Name="source">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.0"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZccecHQ" Name="destination">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.1"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem9dahZSAecHQ" Name="description">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.3"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETE9webOhZSAecHQ" Name="cpuTransmissionTimeStart">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.2"/>
+          </annotatedparameter>
+          <annotatedparameter id="_jVxu5EETEem8bOhZSchqHQ" Name="cpuTransmissionTimeStamp">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.4"/>
+          </annotatedparameter>
+          <annotatedparameter id="_6wyneeETEem8bOhZSAecHQ" Name="type">
+            <annotationinterface href="openRTI.modularenvironment#_OZjUhI9GEeijo84HWAGaqg"/>
+            <operationparameter href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.1/@parameters.5"/>
+          </annotatedparameter>
+        </additionenhancedoperation>
+        <objectclass href="Monitor.simulationfeature#_8uHPR38QEemJ3rN-3bxU4g"/>
+      </additionenchancedobjectclass>
+    </annotationenhancedinformation>
+    <simmodule href="Monitor.simulationfeature#_xxBg0GVMEemmJpjAKRs2YQ"/>
+  </assembablecomponent>
+  <assembablecomponent xsi:type="ModularSimulationAssembly:AssembledSimulationComponent" id="_d9xht4CIEemqifB0PBAc8w" Name="WebServiceNetworkSimulation" encapsulatedSimulationAssembly="_Zw5-QD4REemXUJnrjb_PdQ"/>
+</ModularSimulationAssembly:SimulationAssembly>
