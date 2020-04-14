@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RessourceContainer:RessourceContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:RessourceContainer="edu.kit.ipd.sdq.Modularization.RessourceContainer">
+  <ressourceBundle Name="RTI" TargetInfrastructureList="//@infrastructure.0">
+    <ressourceData Name="federationExecutionName" value="WebService" datatype="//@dataTypeContainer/@datatype.0" constant="true"/>
+    <ressourceData Name="fomFilePath" value="/test/path/FOM.xml" datatype="//@dataTypeContainer/@datatype.0" constant="true"/>
+    <ressourceData Name="partitionCount" value="4" datatype="//@dataTypeContainer/@datatype.1" constant="true"/>
+    <ressourceData Name="synchronizationPoint" value="CaseStudyRun" datatype="//@dataTypeContainer/@datatype.0"/>
+    <ressourceData Name="host" value="localhost" datatype="//@dataTypeContainer/@datatype.0" constant="true"/>
+    <ressourceData Name="port" value="14321" datatype="//@dataTypeContainer/@datatype.0" constant="true"/>
+  </ressourceBundle>
+  <ressourceBundle Name="Server_SimulationFeature" TargetInfrastructureList="//@infrastructure.0">
+    <ressourceData Name="federateName" value="Server" datatype="//@dataTypeContainer/@datatype.0"/>
+    <ressourceData Name="federateType" value="OMNeT++" datatype="//@dataTypeContainer/@datatype.0"/>
+  </ressourceBundle>
+  <ressourceBundle Name="Router_SimulationFeature" TargetInfrastructureList="//@infrastructure.0">
+    <ressourceData Name="federateName" value="Router" datatype="//@dataTypeContainer/@datatype.0"/>
+    <ressourceData Name="federateType" value="OMNeT++" datatype="//@dataTypeContainer/@datatype.0"/>
+  </ressourceBundle>
+  <ressourceBundle Name="User_SimulationFeature" TargetInfrastructureList="//@infrastructure.0">
+    <ressourceData Name="federateName" value="User" datatype="//@dataTypeContainer/@datatype.0"/>
+    <ressourceData Name="federateType" value="RTI" datatype="//@dataTypeContainer/@datatype.0" constant="true"/>
+  </ressourceBundle>
+  <ressourceBundle Name="Monitor_SimulationFeature" TargetInfrastructureList="//@infrastructure.0">
+    <ressourceData Name="federateName" value="Monitor" datatype="//@dataTypeContainer/@datatype.0"/>
+    <ressourceData Name="federateType" value="RTI" datatype="//@dataTypeContainer/@datatype.0"/>
+  </ressourceBundle>
+  <infrastructure Name="WebServiceSimulationSystem" SystemDescription="Debian"/>
+  <dataTypeContainer>
+    <datatype xsi:type="DataTypes:BaseDataType" Name="wstring" primitiveDataType="WSTRING"/>
+    <datatype xsi:type="DataTypes:BaseDataType" Name="int32_t" primitiveDataType="INTEGER"/>
+    <datatype xsi:type="DataTypes:BaseDataType" Name="string" primitiveDataType="STRING"/>
+  </dataTypeContainer>
+</RessourceContainer:RessourceContainer>

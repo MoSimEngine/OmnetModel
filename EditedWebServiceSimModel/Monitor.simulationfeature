@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationFeature:SimulationFeature xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataTypes="edu.kit.ipd.sdq.Modularization.DataRepresentation.DataTypes" xmlns:SimulationFeature="edu.kit.ipd.sdq.Modularization.SimulationFeature" xmlns:SimulationInformation="edu.kit.ipd.sdq.Modularization.DataRepresentation.SimulationInformation" id="_xxBg0GVMEemmJpjAKRs2YQ" Name="Monitor">
+  <simulationDescription id="_aWTgkGYBEemmJpjAKRs2YQ">
+    <simulationdata xsi:type="SimulationInformation:ObjectOrientedViewSimulationData" id="_e0ZcgGYBEemmJpjAKRs2YQ">
+      <objectclassoperation Name="handleMessage">
+        <precondition description="RTI Connection is established"/>
+        <parameters Name="Interaction" reference="true">
+          <dataType xsi:type="DataTypes:ObjectClassReferenceDataType" href="User.simulationfeature#//@dataTypeContainer/@datatype.5"/>
+        </parameters>
+      </objectclassoperation>
+      <requireddataentry xsi:type="SimulationInformation:ReferencingRequiredOOEntry" objectclass="_k0G8M2YBEemmJpjAKRs2YQ">
+        <objectclassoperation href="User.simulationfeature#//@simulationDescription/@simulationdata/@objectclassoperation.2"/>
+      </requireddataentry>
+      <objectclass id="_k0G8M2YBEemmJpjAKRs2YQ" Name="MonitorComponent" parentClass="//@simulationDescription/@simulationdata/@objectclass.1/@objectClassInheritance" referencingrequiredooentry="//@simulationDescription/@simulationdata/@requireddataentry.0"/>
+      <objectclass id="_w0qVB38QEemJ3rN-3bxU4g" Name="MonitorMoSimComponent">
+        <objectClassInheritance childClasses="_k0G8M2YBEemmJpjAKRs2YQ"/>
+      </objectclass>
+      <objectclass id="_2VJiF38QEemJ3rN-3bxU4g" Name="MonitorServiceEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_LWaVYH8REemJ3rN-3bxU4g" Name="source"/>
+        <data id="_L1AV4H8REemJ3rN-3bxU4g" Name="destination"/>
+        <data id="_MNB0UH8REemJ3rN-3bxU4g" Name="nexthop"/>
+        <data id="_MpJIkH8REemJ3rN-3bxU4g" Name="destination"/>
+        <data id="_NC5FUH8REemJ3rN-3bxU4g" Name="cpuTransmissionStartTime"/>
+        <data id="_NdogkH8REemJ3rN-3bxU4g" Name="type"/>
+        <data id="_OLco0H8REemJ3rN-3bxU4g" Name="a"/>
+        <data id="_h7AjsH8REemJ3rN-3bxU4g" Name="b"/>
+        <data id="_i9f7cH8REemJ3rN-3bxU4g" Name="c"/>
+      </objectclass>
+      <objectclass id="_8uHPR38QEemJ3rN-3bxU4g" Name="MonitorStatusEvent" parentClass="//@simulationDescription/@simulationdata/@objectclass.4/@objectClassInheritance">
+        <data id="_kMrrYH8REemJ3rN-3bxU4g" Name="source">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_kx4qMH8REemJ3rN-3bxU4g" Name="destination">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_l9TUcH8REemJ3rN-3bxU4g" Name="nexthop">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_mijWkH8REemJ3rN-3bxU4g" Name="description">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_lDPsYWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_nIO2gH8REemJ3rN-3bxU4g" Name="cpuTransmissionStartTime">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_ie3rIWWpEemmJpjAKRs2YQ"/>
+        </data>
+        <data id="_nvsfIH8REemJ3rN-3bxU4g" Name="type">
+          <datatype xsi:type="DataTypes:BaseDataType" href="openRTI.modularenvironment#_iCq3UWWpEemmJpjAKRs2YQ"/>
+        </data>
+      </objectclass>
+      <objectclass id="_DKHCV38REemJ3rN-3bxU4g" Name="Interaction" semantics="Interaction">
+        <objectClassInheritance childClasses="_2VJiF38QEemJ3rN-3bxU4g _8uHPR38QEemJ3rN-3bxU4g"/>
+      </objectclass>
+      <objectclass Name="MonitorMoSimCoordinator">
+        <objectClassInheritance childClasses="//@simulationDescription/@simulationdata/@objectclass.6"/>
+      </objectclass>
+      <objectclass Name="MonitorRTICoordinator" parentClass="//@simulationDescription/@simulationdata/@objectclass.5/@objectClassInheritance"/>
+    </simulationdata>
+    <engineinformation simulationEngineType="OMNeTPP" EngineEventSuperClass="_DKHCV38REemJ3rN-3bxU4g"/>
+    <eventSynchronizationMechanism timeConstraint="Passive"/>
+  </simulationDescription>
+  <basicsimulationcomponent href="WebServiceNetwork.modularsimulationassembly#_VTfcIGYDEemmJpjAKRs2YQ"/>
+  <dataTypeContainer id="_XvCG0X8wEemJ3rN-3bxU4g">
+    <datatype xsi:type="DataTypes:EnumType" Name="MonitorServiceEventStatus">
+      <enumliteral literalName="ServiceRequest"/>
+      <enumliteral literalName="ServiceResponse" literalValue="1"/>
+      <enumliteral literalName="ServiceError" literalValue="2"/>
+    </datatype>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" Name="MonitorServiceEvent" objectclass="_2VJiF38QEemJ3rN-3bxU4g"/>
+    <datatype xsi:type="DataTypes:ObjectClassReferenceDataType" Name="Interaction">
+      <objectclass href="User.simulationfeature#_zqm3I37_EemJ3rN-3bxU4g"/>
+    </datatype>
+  </dataTypeContainer>
+</SimulationFeature:SimulationFeature>

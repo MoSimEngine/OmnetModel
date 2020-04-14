@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterfaceDefinition:InterfaceRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:InterfaceDefinition="edu.kit.ipd.sdq.Modularization.Assembly.AssemblyInterface.InterfaceDefinition" id="_zYFJkD4NEemXUJnrjb_PdQ" Name="WebServiceNetworkInterfaces">
+  <assemblyinterface id="_hs9WMD4OEemXUJnrjb_PdQ" Name="NetworkPacket">
+    <interfaceobjectclass Name="ConnectionHandler">
+      <interfacedata Name="InteractionList"/>
+      <interfacedata Name="ObjectList"/>
+      <interfaceoperation id="_fj2_MT8gEemsT82M-2d-uQ" Name="sendStatusPacket">
+        <interfaceparameter id="_6kH8QED8Eem8bOhZSAecHQ" Name="source"/>
+        <interfaceparameter id="_EHw1sED9Eem8bOhZSAecHQ" Name="destination"/>
+        <interfaceparameter id="_OeuCcED9Eem8bOhZSAecHQ" Name="nexthop" optional="true"/>
+        <interfaceparameter id="_HVU94ED9Eem8bOhZSAecHQ" Name="description" optional="true"/>
+        <interfaceparameter id="_JFcQoED9Eem8bOhZSAecHQ" Name="cpuTransmissionStartTime" optional="true">
+          <dataTypeDescriptions>int64_t</dataTypeDescriptions>
+        </interfaceparameter>
+        <interfaceparameter id="_REULsED9Eem8bOhZSAecHQ" Name="type"/>
+        <interfaceparameter Name="ArivalTime"/>
+      </interfaceoperation>
+      <interfaceoperation id="_zPVrUT8gEemsT82M-2d-uQ" Name="sendServicePacket">
+        <interfaceparameter id="_6kH8QED8Eem8bOhZSAecHQ" Name="source"/>
+        <interfaceparameter id="_EHw1sED9Eem8bOhZSAecHQ" Name="destination"/>
+        <interfaceparameter id="_OeuCcED9Eem8bOhZSAecHQ" Name="nexthop" optional="true"/>
+        <interfaceparameter id="_HVU94ED9Eem8bOhZSAecHQ" Name="description" optional="true"/>
+        <interfaceparameter id="_JFcQoED9Eem8bOhZSAecHQ" Name="cpuTransmissionStartTime" optional="true"/>
+        <interfaceparameter id="_REULsED9Eem8bOhZSAecHQ" Name="type"/>
+        <interfaceparameter id="_W2MqwED9Eem8bOhZSAecHQ" Name="a"/>
+        <interfaceparameter id="_YMdTEED9Eem8bOhZSAecHQ" Name="b"/>
+        <interfaceparameter id="_ZlRgIED9Eem8bOhZSAecHQ" Name="c"/>
+        <interfaceparameter Name="ArivalTime"/>
+      </interfaceoperation>
+      <interfaceoperation Name="convertInteractionToService"/>
+      <interfaceoperation Name="convertServiceToInteraction"/>
+      <interfaceoperation Name="convertInteractionToStatus"/>
+      <interfaceoperation Name="convertStatusToInteraction"/>
+      <interfaceoperation Name="generateStatus">
+        <interfaceparameter id="_6kH8QED8Eem8bOhZSAecHQ" Name="source"/>
+        <interfaceparameter id="_EHw1sED9Eem8bOhZSAecHQ" Name="destination"/>
+        <interfaceparameter id="_OeuCcED9Eem8bOhZSAecHQ" Name="nexthop" optional="true"/>
+        <interfaceparameter id="_HVU94ED9Eem8bOhZSAecHQ" Name="description" optional="true"/>
+        <interfaceparameter id="_JFcQoED9Eem8bOhZSAecHQ" Name="cpuTransmissionStartTime" optional="true">
+          <dataTypeDescriptions>int64_t</dataTypeDescriptions>
+        </interfaceparameter>
+        <interfaceparameter id="_REULsED9Eem8bOhZSAecHQ" Name="type"/>
+      </interfaceoperation>
+      <interfaceoperation Name="generateService">
+        <interfaceparameter id="_6kH8QED8Eem8bOhZSAecHQ" Name="source"/>
+        <interfaceparameter id="_EHw1sED9Eem8bOhZSAecHQ" Name="destination"/>
+        <interfaceparameter id="_OeuCcED9Eem8bOhZSAecHQ" Name="nexthop" optional="true"/>
+        <interfaceparameter id="_HVU94ED9Eem8bOhZSAecHQ" Name="description" optional="true"/>
+        <interfaceparameter id="_JFcQoED9Eem8bOhZSAecHQ" Name="cpuTransmissionStartTime" optional="true"/>
+        <interfaceparameter id="_REULsED9Eem8bOhZSAecHQ" Name="type"/>
+        <interfaceparameter id="_W2MqwED9Eem8bOhZSAecHQ" Name="a"/>
+        <interfaceparameter id="_YMdTEED9Eem8bOhZSAecHQ" Name="b"/>
+        <interfaceparameter id="_ZlRgIED9Eem8bOhZSAecHQ" Name="c"/>
+      </interfaceoperation>
+    </interfaceobjectclass>
+  </assemblyinterface>
+</InterfaceDefinition:InterfaceRepository>
